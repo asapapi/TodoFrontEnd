@@ -9,7 +9,7 @@ const routes: Routes = [
   // Welcome component
   {path:  '', component: LoginComponent}, // this sets the default path url to go to the login page with url localhost:4200
   {path: 'login', component: LoginComponent},
-  {path: 'welcome', component: WelcomeComponent},
+  {path: 'welcome/:name', component: WelcomeComponent},
   {path: '**', component: ErrorComponent}
 
 ];
