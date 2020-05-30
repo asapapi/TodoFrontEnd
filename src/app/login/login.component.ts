@@ -23,7 +23,7 @@ export class LoginComponent implements OnInit {
   handleLogin() {
 
     if (this.username === 'Asahi123' && this.password === 'password') {
-      this.router.navigate(['welcome']);
+      this.router.navigate(['welcome', this.username]);
       this.invalidLogin =  false;
 
     } else {
@@ -33,3 +33,5 @@ export class LoginComponent implements OnInit {
     // console.log(this.username);
   }
 }
+
+//
