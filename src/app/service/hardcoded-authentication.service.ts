@@ -13,7 +13,7 @@ export class HardcodedAuthenticationService {
 
 
           sessionStorage.setItem('authenticaterUser', username);
-          console.log(this.isUserLoggedIn());
+          // console.log(this.isUserLoggedIn());
           return true;
 
     }
@@ -23,6 +23,10 @@ export class HardcodedAuthenticationService {
   isUserLoggedIn() {
    const user = sessionStorage.getItem('authenticaterUser');
    return !(user === null);
+  }
+
+  logout() {
+    sessionStorage.removeItem('authenticaterUser');
   }
 }
 
